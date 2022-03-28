@@ -1,8 +1,9 @@
 import React from 'react'
+import { StyleSheet, View, TextInput } from 'react-native'
 
 const StatusBar = () => {
   return (
-    <div>StatusBar</div>
+    <View>StatusBar</View>
   )
 }
 
