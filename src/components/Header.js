@@ -1,24 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function Header() {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.lightHeader}>Grab your</Text>
-            <Text style={styles.boldtHeader}>delicous meal!</Text>
-        </View>
-    )
+export default function Header({ upperText, lowerText }) {
+  return (
+    <View syle={styles.headerContainer}>
+      <Text style={styles.header1}>{upperText}</Text>
+      <Text style={styles.header2}>{lowerText}</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop: 60,
-        marginHorizontal: 25,
-    },
-    lightHeader: {
-        fontSize: 35,
-    },
-    boldtHeader: {
-        fontSize: 40,
-        fontWeight: 'bold',
-    }
-})
+  header1: {
+    fontSize: 35,
+    marginTop: 60,
+    marginHorizontal: 25,
+  },
+  header2: {
+    fontSize: 40,
+    marginHorizontal: 25,
+    fontWeight: "bold",
+  },
+});
